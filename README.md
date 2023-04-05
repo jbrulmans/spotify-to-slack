@@ -35,7 +35,7 @@ For `APIKEY`, you will need to generate a new Slack API token via a new Slack ap
 - Scroll up and select Install to Workspace under OAuth Tokens for Your Workspace
 - Copy User OAuth Token under OAuth Tokens for Your Workspace
 
-For `EMOJI`, you can use whatever emoji is available on slack **or** on your custom slack environment. Just simply enter the slack emoji name wit the leading and trailing `:`. E.g. the default emoji is `":headphones:"` (🎧).
+For `EMOJI`, you can use whatever emoji is available on slack **or** on your custom slack environment. Just simply enter the slack emoji name with the leading and trailing `:`. E.g. the default emoji is `":headphones:"` (🎧).
 
 Now if you run the script with
 
