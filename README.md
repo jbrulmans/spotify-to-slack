@@ -110,7 +110,7 @@ Add the following line (`>`) before `state=$(...`:
 And add the following lines (`>`) after the `fi` statement:
 
 ```bash
-    curl -X POST --data "$JSON" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json; charset=utf-8" --silent -o /dev/null https://slack.com/api/users.profile.set | jq 'del(.profile)'
+        curl -X POST --data "$JSON" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json; charset=utf-8" --silent -o /dev/null https://slack.com/api/users.profile.set | jq 'del(.profile)'
     fi
 
 >   sleep 60
