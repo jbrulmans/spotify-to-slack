@@ -11,7 +11,7 @@ trap onexit INT
 
 function reset() {
     echo 'Clearing status'
-    curl -s -d "payload=$json" "https://slack.com/api/users.profile.set?token="$APIKEY"&profile=%7B%22status_text%22%3A%22%22%2C%22status_emoji%22%3A%22%22%7D"
+    osascript -e 'tell script "Slack" to clear status'
 }
 
 function onexit() {
