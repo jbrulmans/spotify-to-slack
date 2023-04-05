@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Get this token by:
 # - Creating a Slack app https://api.slack.com/apps
 # - Select Permissions > Scopes > User Token Scopes and add `users.profile:write`
