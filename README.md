@@ -38,7 +38,12 @@ chmod -R 755 spotify-to-slack/
 
 Set the `APIKEY` and `EMOJI` variables in the `spotify-to-slack.sh` script.
 
-For `APIKEY`, you can use an old *legacy* slack token that you might still have generated [here](https://api.slack.com/legacy/custom-integrations/legacy-tokens). Otherwise you will need to generate a new Slack API token via a new Slack app [here](https://api.slack.com/apps).
+For `APIKEY`, you can use an old *legacy* slack token that you might still have generated [here](https://api.slack.com/legacy/custom-integrations/legacy-tokens). Otherwise you will need to generate a new Slack API token via a new Slack app [here](https://api.slack.com/apps):
+
+- Create a new Slack app
+- Select Permissions > Scopes > User Token Scopes and add `users.profile:write`
+- Scroll up and select Install to Workspace under OAuth Tokens for Your Workspace
+- Copy User OAuth Token under OAuth Tokens for Your Workspace
 
 For `EMOJI`, you can use whatever emoji is available on slack **or** on your custom slack environment. Just simply enter the slack emoji name without the leading and trailing `:`. E.g. the default emoji is `"headphones"` (🎧).
 
