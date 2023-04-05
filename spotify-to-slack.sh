@@ -11,7 +11,8 @@ trap onexit INT
 
 function reset() {
     echo 'Clearing status'
-    osascript -e 'tell script "Slack" to clear status'
+    JSON=$(echo '{}' | jq '.profile.status_text="" | .profile.status_emoji=""')
+    curl -X POST --data "$JSON" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json; charset=utf-8" --silent -o /dev/null https://slack.com/api/users.profile.set | jq 'del(.profile)'
 }
 
 function onexit() {
