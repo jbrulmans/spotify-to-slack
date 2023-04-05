@@ -104,7 +104,7 @@ $ launchctl list | grep 'com.user.spotify-to-slack'
 
 If you don't want to set up the script running automatically via Launch Control, but you would like to manually start and stop the script when you feel like it. You can make the following changes to the code and **ignore** step 4 in the installation.
 
-Add the following line before `state=$(...`:
+Add the following line (`>`) before `state=$(...`:
 
 ```bash
 > while true; do
@@ -114,7 +114,7 @@ Add the following line before `state=$(...`:
     echo "Spotify: "$state
 ```
 
-And add the following lines after the `fi` statement:
+And add the following lines (`>`) after the `fi` statement:
 
 ```bash
 curl -s -d "payload=$json" "https://slack.com/api/users.profile.set?token="$APIKEY"&profile=%7B%22status_text%22%3A%22"$URLSONG"%22%2C%22status_emoji%22%3A%22%3Aheadphones%3A%22%7D"  > /dev/null
