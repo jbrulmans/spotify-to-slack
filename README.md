@@ -8,22 +8,12 @@ The script is meant to be run as a daemon with the MacOS Launch Agent so it can 
 
 ## Installation
 
-### 1. **perl** setup
+### 1. Prerequisites
 
-Run the following commands in order to install the `perl` requisites
+Install `jq` from `brew`
 
 ```bash
-perl -MCPAN -e shell
-```
-
-```perl
-install URI::Escape
-```
-
-Then exit out of `perl`
-
-```perl
-exit
+brew install jq
 ```
 
 ### 2. Permissions
