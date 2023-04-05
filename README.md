@@ -67,7 +67,7 @@ Drop the following `plist` into `~/Library/LaunchAgents/com.user.spotify-to-slac
         <string>com.user.spotify-to-slack</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/Users/brulmanj/src/spotify-slack/spotify-to-slack.sh</string>
+            <string>/Users/brulmanj/src/spotify-to-slack/spotify-to-slack.sh</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
