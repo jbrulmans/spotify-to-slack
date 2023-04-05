@@ -1,4 +1,4 @@
-# spotify-to-slack
+# <img src="./docs/spotify.png"  width="24" height="24" alt="spotify logo"> spotify-to-slack <img src="./docs/slack.png"  width="24" height="24" alt="slack-logo">
 
 A script that shows your spotify song playing to your slack status via a MacOS Launch Agent based on [jgamblin](https://gist.github.com/jgamblin)'s code snippet.
 
@@ -50,8 +50,6 @@ sh spotify-to-slack.sh
 
 it should set your current song playing as your slack status (only once for now though)
 
-
-
 ### 4. Set up launch agent
 
 You can have this run automatically on your mac using the native launchd system:
@@ -97,7 +95,7 @@ Finally, make sure the status of the loaded agent is `0`. If it show any differe
 
 ```bash
 $ launchctl list | grep 'com.user.spotify-to-slack'
--	0	com.user.slack-spotify
+- 0 com.user.slack-spotify
 ```
 
 ## Run the script **without** Launch Control
