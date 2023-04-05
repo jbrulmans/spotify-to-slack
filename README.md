@@ -67,16 +67,16 @@ Drop the following `plist` into `~/Library/LaunchAgents/com.user.spotify-to-slac
         <string>com.user.spotify-to-slack</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/Users/brulmanj/src/spotify-to-slack/spotify-to-slack.sh</string>
+            <string>/Users/jbrulmans/src/spotify-to-slack/spotify-to-slack.sh</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
         <key>StartInterval</key>
         <integer>60</integer>
         <key>StandardErrorPath</key>
-        <string>/Users/brulmanj/src/spotify-to-slack/.logs/error.log</string>
+        <string>/Users/jbrulmans/src/spotify-to-slack/.logs/error.log</string>
         <key>StandardOutPath</key>
-        <string>/Users/brulmanj/src/spotify-to-slack/.logs/output.log</string>
+        <string>/Users/jbrulmans/src/spotify-to-slack/.logs/output.log</string>
     </dict>
 </plist>
 ```
@@ -99,3 +99,6 @@ Finally, make sure the status of the loaded agent is `0`. If it show any differe
 $ launchctl list | grep 'com.user.spotify-to-slack'
 -	0	com.user.slack-spotify
 ```
+
+## Run the script **without** Launch Control
+
