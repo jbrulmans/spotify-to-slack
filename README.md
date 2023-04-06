@@ -121,6 +121,12 @@ To reload it again, once again run:
 launchctl load ~/Library/LaunchAgents/com.user.spotify-to-slack.plist
 ```
 
+> :info: **For ease of use you could add aliases to your `.zshrc` for starting and stopping the script:**
+```bash
+alias start-spotify-to-slack='launchctl load ~/Library/LaunchAgents/com.user.slack-spotify.plist'
+alias stop-spotify-to-slack='launchctl unload ~/Library/LaunchAgents/com.user.slack-spotify.plist'
+```
+
 ## Run the script **without** Launch Control
 
 If you don't want to set up the script running automatically via Launch Control, but you would like to manually start and stop the script when you feel like it. You can make the following changes to the code and **ignore** step 4 in the installation.
