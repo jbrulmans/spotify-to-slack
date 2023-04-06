@@ -107,7 +107,7 @@ $ launchctl list | grep 'com.user.spotify-to-slack'
 - 0 com.user.slack-spotify
 ```
 
-## Stop the script
+## Starting and stopping the script
 
 To stop or temporarily pause the script from updating your slack. Please unload the Launch Agent with:
 
@@ -121,7 +121,7 @@ To reload it again, once again run:
 launchctl load ~/Library/LaunchAgents/com.user.spotify-to-slack.plist
 ```
 
-> :info: **For ease of use you could add aliases to your `.zshrc` for starting and stopping the script:**
+> ℹ️ **For ease of use you could add aliases to your `.zshrc` for starting and stopping the script:**
 ```bash
 alias start-spotify-to-slack='launchctl load ~/Library/LaunchAgents/com.user.slack-spotify.plist'
 alias stop-spotify-to-slack='launchctl unload ~/Library/LaunchAgents/com.user.slack-spotify.plist'
