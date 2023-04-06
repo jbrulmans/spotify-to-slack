@@ -6,6 +6,12 @@ A script that shows your spotify song playing to your slack status via a MacOS L
 
 The script is meant to be run as a daemon with the MacOS Launch Agent so it can be run with an interval. The script will periodically check if Spotify is playing a song or not and if it is, report it to the Slack API as a Slack status. If it's not playing anything anymore, it will automatically report an empty status again to Slack.
 
+<p align="center">
+    <img src="./docs/chat.png"  width="320" height="96" align="center" alt="chat conversation with script running"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./docs/profile.png"  height="320"  width= "223" align="center" alt="profile page with script running"/>
+</p>
+
 ## Installation
 
 ### 1. Prerequisites
