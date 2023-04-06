@@ -51,7 +51,7 @@ You can have this run automatically on your mac using the native launchd system:
 
 Drop the following `plist` into `~/Library/LaunchAgents/com.user.spotify-to-slack.plist`. The filename must match the string under Label, replace `/PATH/TO/SCRIPT.sh` with an actual path to the .sh script above.
 
-> :warning: Make sure that the path to the homebrew installation directory is set correctly in `EnvironmentVariables`!
+> :warning: **Make sure to set the relevant `PATH` locations in `EnvironmentVariables`**! E.g. `/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -67,7 +67,7 @@ Drop the following `plist` into `~/Library/LaunchAgents/com.user.spotify-to-slac
         <key>EnvironmentVariables</key>
         <dict>
           <key>PATH</key>
-          <string>/opt/homebrew/bin/:$PATH</string>
+          <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
         </dict>
         <key>RunAtLoad</key>
         <true/>
